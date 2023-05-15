@@ -1,0 +1,19 @@
+.cars-list__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .cars-list__container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .cars-list__container {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
