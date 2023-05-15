@@ -1,16 +1,20 @@
-import Card from '../Card/Card'
+import React from 'react';
+import Card from '../Card/Card';
 
-function CarsList({
-  cards
-}) {
 
-  console.log(cards)
+function CarsList({ cards, onEdit, onDelete }) {
   return (
-    <section className='cars__container'>
-      <Card />
-     
-    </section>
-
-  )
+    <div className="cars-list__container">
+      {cards.map((card) => (
+        <Card
+          key={card.id}
+          card={card}
+          onEdit={onEdit}
+          onDelete={onDelete}    
+        />
+      ))}
+    </div>
+  );
 }
+
 export default CarsList;
