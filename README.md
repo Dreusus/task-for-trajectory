@@ -1,4 +1,4 @@
-# ***Тестовое задание Frontend***
+# **Frontend Test task**
 ----
 
 ## Stack
