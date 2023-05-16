@@ -1,16 +1,18 @@
 class CarsApi {
-  constructor({ baseUrl }) {
-    this._baseUrl = baseUrl
+  private _baseUrl: string;
+
+  constructor({ baseUrl }: { baseUrl: string }) {
+    this._baseUrl = baseUrl;
   }
 
-  _checkResponse(res) {
+  private _checkResponse(res: Response) {
     if (res.ok) {
       return res.json()
     }
     return Promise.reject(`Ошибка: ${res.statusText}`)
   }
- 
-  _request(url, options) {
+
+  _request(url: string, options: RequestInit) {
     return fetch(url, options).then(this._checkResponse)
   }
 
