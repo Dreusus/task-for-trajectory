@@ -14,6 +14,16 @@
 * JavaScript
 * React.js
 
+
+## Сортировка
+![](https://raw.githubusercontent.com/Dreusus/testTask-for-trajectory/main/gif/Сортировка.gif)
+
+## Редактирование
+![](https://raw.githubusercontent.com/Dreusus/testTask-for-trajectory/9e816a684ed43cf284d0f8c8fe681c6790c709fa/gif/Редактирвание.gif)
+
+## Отображние объектов на карте
+![](https://raw.githubusercontent.com/Dreusus/testTask-for-trajectory/main/gif/maps.png)
+
 ## Available Scripts
 
 In the project directory, you can run:
